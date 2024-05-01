@@ -14,7 +14,7 @@ if (obiect !== null) {
     statistici.style.display = "block";
 }
 
-fetch('http://13.50.252.252:8090/emails')
+fetch('http://13.49.74.56:8090/emails')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -35,7 +35,7 @@ fetch('http://13.50.252.252:8090/emails')
     });
 
 
-fetch('http://13.50.252.252:8090/feedbacks')
+fetch('http://13.49.74.56:8090/feedbacks')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -78,7 +78,7 @@ formular.addEventListener('submit', async (event) => {
     };
 
     try {
-        const response = await fetch('http://13.50.252.252:8090/login', {
+        const response = await fetch('http://13.49.74.56:8090/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -107,7 +107,7 @@ function searchByEmailCurse() {
     var valoareInput = emailInput.value;
     if (valoareInput === '') {
 
-        fetch('http://13.50.252.252:8090/emails')
+        fetch('http://13.49.74.56:8090/emails')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -128,7 +128,7 @@ function searchByEmailCurse() {
             });
     }
 
-    fetch(`http://13.50.252.252:8090/emails/${valoareInput}`)
+    fetch(`http://13.49.74.56:8090/emails/${valoareInput}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -154,7 +154,7 @@ function allData() {
     while (tableCurse.rows.length > 1) {
         tableCurse.deleteRow(1);
     }
-    fetch('http://13.50.252.252:8090/emails')
+    fetch('http://13.49.74.56:8090/emails')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -182,7 +182,7 @@ function searchByNameRating() {
     var valoareInput = ratingInput.value;
     if (valoareInput === '') {
 
-        fetch('http://13.50.252.252:8090/feedbacks')
+        fetch('http://13.49.74.56:8090/feedbacks')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -203,7 +203,7 @@ function searchByNameRating() {
             });
     }
 
-    fetch(`http://13.50.252.252:8090/feedbacks/${valoareInput}`)
+    fetch(`http://13.49.74.56:8090/feedbacks/${valoareInput}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -229,7 +229,7 @@ function allDataFeedback() {
     while (tableFeedback.rows.length > 1) {
         tableFeedback.deleteRow(1);
     }
-    fetch('http://13.50.252.252:8090/feedbacks')
+    fetch('http://13.49.74.56:8090/feedbacks')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -250,7 +250,7 @@ function allDataFeedback() {
         });
 }
 
-fetch('http://13.50.252.252:8090/graph-data')
+fetch('http://13.49.74.56:8090/graph-data')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');

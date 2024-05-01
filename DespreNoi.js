@@ -15,7 +15,7 @@ form.addEventListener('submit', async (event) => {
     };
     console.log(formData);
     try {
-        const response = await fetch('http://13.50.252.252:8090/send-email', {
+        const response = await fetch('http://13.49.74.56:8090/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
