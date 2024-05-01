@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="Statistici.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS1IZTrQGENSubUPi8bSOQI7qA8g3aVvs&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+  <link rel="icon" href="img\logo.png" type="png">
+  <title>Nemir Fizicienilor</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DJ3DYX61VQ');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <header id="home">
+    <nav>
+      <a href="#" class="navbar-logo">Nemir Fizicienilor</a>
+      <ul class="nav-list">
+        <li><a class="nav-item" href="index.html">Despre Noi</a></li>
+        <li><a class="nav-item" href="BursaTransport.html">Bursă Transport</a></li>
+        <li><a class="nav-item" href="Statistici.html">Statistici</a></li>
+      </ul>
+    </nav>
+
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Pentru noi transporturile nu au niciun secret</h1>
+      </div>
+      <img src="img/CamionNou.jpg" alt="Camion">
+    </div>
+
+    <form id="contact-form" class="form-horizontal" role="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" placeholder="USERNAME" name="username" value="" required>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="parola" placeholder="PAROLA" name="parola" value="" required>
+      </div>
+
+      <button class="autentificare">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text"> Autentificare </span>
+        </div>
+      </button>
+    </form>
+
+    <div id="statistici">
+
+      <h1>
+        Curse solicitate in fiecare luna
+      </h1>
+      <div class="grafic">
+        <canvas id="objectCreationChart"></canvas>
+      </div>
+
+      <h1>
+        Istoricul curselor
+      </h1>
+      <div class="search-section">
+        <input type="text" id="emailInput" placeholder="email">
+        <button onclick="searchByEmailCurse()">Caută</button>
+        <button onclick="allData()">Istoric</button>
+      </div>
+      <table id="emailTable">
+        <thead>
+          <tr>
+            <th>Nume</th>
+            <th>Email</th>
+            <th>Mesaj</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <h1>
+        Evaluarea experientelor
+      </h1>
+      <div class="search-section">
+        <input type="text" id="ratingInput" placeholder="nume">
+        <button onclick="searchByNameRating()">Caută</button>
+        <button onclick="allDataFeedback()">Istoric</button>
+      </div>
+      <table id="feedbackTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Evaluare</th>
+            <th>Mesaj</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="rating"></div>
+      <div class="analytics-container">
+        <div class="analytics-section">
+          <p>Pentru mai multe detalii despre traficul site-ului, accesează <a
+              href="https://analytics.google.com/analytics/web/?authuser=0#/p433605129/realtime/overview?params=_u..nav%3Dmaui"
+              target="_blank">Google Analytics</a>.</p>
+        </div>
+        <div class="analytics-section">
+          <p>Pentru mai multe detalii despre cursele selectate, accesează <a
+              href="https://docs.google.com/spreadsheets/d/16xHF0xULXlZ8IWTkfuJZVwmj7-PLmy3dev7C5h-uwAM/edit?usp=sharing"
+              target="_blank">Curse Selectate</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd693b689d.js" crossorigin="anonymous"></script>
+    <script src="Statistici.js"></script>
+  </header>

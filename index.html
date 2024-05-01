@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="DespreNoi.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS1IZTrQGENSubUPi8bSOQI7qA8g3aVvs&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+    <link rel="icon" href="img\logo.png" type="png">
+    <title>Nemir Fizicienilor</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ3DYX61VQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DJ3DYX61VQ');
+    </script>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="#" class="navbar-logo">Nemir Fizicienilor</a>
+            <ul class="nav-list">
+                <li><a class="nav-item" href="index.html">Despre Noi</a></li>
+                <li><a class="nav-item" href="BursaTransport.html">Bursă Transport</a></li>
+                <li><a class="nav-item" href="Statistici.html">Statistici</a></li>
+            </ul>
+        </nav>
+        x
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Pentru noi transporturile nu au nici un secret!</h1>
+            </div>
+            <img src="img/CamionNou.jpg" alt="Camion">
+        </div>
+
+    </header>
+
+    <h1 class="section-header">Despre noi</h1>
+    <ul class="tilesWrap">
+        <li>
+            <h2>1986-1992</h2>
+            <h3>Începutul</h3>
+            <br>
+            <p>
+                În anul 1986 s-au cunoscut cei 2 fondatori ai societății S.C. Roli Trans S.R.L. În anul 1992 au
+                înființat societatea Roli Trans, acesta fiind acronim pentru România Liberă a Transporturilor.
+            </p>
+        </li>
+        <li>
+            <h2>2013</h2>
+            <h3>Înființarea</h3>
+            <br>
+            <p>
+                În anul 2013, s-a înființat S.C. Nemir Fizicienilor S.R.L., având drept asociați copiii celor doi
+                fondatori ai societății S.C. Roli Trans S.R.L.. Inițial această companie a avut ca obiect de activitate
+                pricipal închirierea de bunuri imobile.
+            </p>
+        </li>
+        <li>
+            <h2>2021</h2>
+            <h3>Apogeul</h3>
+            <br>
+            <p>
+                Odată cu începerea pandemiei, compania a văzut o oportunitate economică și astfel și-a îndreptat atenția
+                asupra parcului auto al firmei parinților, preluând o parte din autocamioanele acesteia.
+            </p>
+        </li>
+        <li>
+            <h2>2023</h2>
+            <h3>Viitorul...</h3>
+            <br>
+            <p>
+                În anul 2023, întreaga activitate de transporturi a societății Roli Trans a fost preluată de urmașa sa
+                Nemir Fizicienilor, astfel doi dintre urmașii fondatorilor societății Roli Trans ducând mai departe
+                pasiunea și afacerea familiilor lor.
+            </p>
+        </li>
+    </ul>
+
+    <section id="contact">
+        <h1 class="section-header">Contactează-ne</h1>
+        <div class="contact-wrapper">
+
+            <div class="direct-contact-container">
+                <ul class="contact-list width-31">
+                    <i class="fa-solid fa-thumbtack icon"></i>
+                    <li class="adresa list-item"> <strong>Adresă: </strong><span>România, București, Sector 3, Str.
+                            Fizicienilor, Nr. 15</span></li>
+                    <i class="fa-solid fa-phone icon"></i>
+                    <li class="list-item"><span><strong>Secretariat: </strong><a href="tel:+40213215908">021 321 59
+                                08</a></span></li>
+                    <li class="list-item"><strong>Dispecerat: <br></strong> <strong>Cristian</strong> - 0722687612 /
+                        cristian@nemirfizicienilor.ro<br> <strong>Lavinia</strong> - 0721294233 /
+                        lavinia@nemirfizicienilor.ro</a> </li>
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <li class="list-item"><span class="contactEmail"><strong>E-mail:</strong> <a
+                                href="mail:nemir@nemirfizicienilor.ro">nemir@nemirfizicienilor.ro</a></span></li>
+                </ul>
+            </div>
+            <form id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="NUME" name="nume" value="" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                        required>
+                </div>
+                <textarea class="form-control" id="message" rows="6" placeholder="MESAJ" name="mesaj"
+                    required></textarea>
+                <button>
+                    <div class="alt-send-button">
+                        <i class="fa fa-paper-plane"></i><span class="send-text"> TRIMITE </span>
+                    </div>
+                </button>
+            </form>
+            <div class="direct-contact-container">
+                <h2>Program:</h2>
+                <div class="program">
+                    <p class="orar-item"><strong>Deschis:</strong> Luni - Vineri: 8:30 - 16:30</p>
+                    <p class="orar-item"><strong>Închis:</strong> Sâmbătă-Duminică</p>
+                    <p class="orar-item">Închis de sărbătorile naționale.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="map-container">
+        <gmp-map center="44.41189956665039,26.148923873901367" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="44.41189956665039,26.148923873901367"
+                title="My location"></gmp-advanced-marker>
+        </gmp-map>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bd693b689d.js" crossorigin="anonymous"></script>
+    <script src="DespreNoi.js"></script>
+</body>
+
+</html>
