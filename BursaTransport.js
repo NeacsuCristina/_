@@ -15,7 +15,7 @@ function getData() {
         tableCurse.deleteRow(1);
     }
 
-    fetch('http://13.49.74.56:8090/cursa')
+    fetch('https://bursa-transport-server.onrender.com/cursa')
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -39,7 +39,7 @@ function getData() {
 }
 
 function deleteRow(id) {
-    fetch(`http://13.49.74.56:8090/cursa/${id}`, {
+    fetch(`https://bursa-transport-server.onrender.com/cursa/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -95,7 +95,7 @@ if (formularFeedback) {
             data: formatDate(new Date())
         };
         try {
-            const response = await fetch('http://13.49.74.56:8090/feedback', {
+            const response = await fetch('https://bursa-transport-server.onrender.com/feedback', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -131,7 +131,7 @@ if (formular) {
             };
 
             try {
-                const response = await fetch('http://13.49.74.56:8090/cursa/save', {
+                const response = await fetch('https://bursa-transport-server.onrender.com/cursa/save', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -158,7 +158,7 @@ if (formular) {
             };
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
             try {
-                const response = await fetch('http://13.49.74.56:8090/send-email/curse', {
+                const response = await fetch('https://bursa-transport-server.onrender.com/send-email/curse', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -183,7 +183,7 @@ if (formular) {
 
 async function getTestimonials() {
     try {
-        const response = await fetch('http://13.49.74.56:8090/feedbacks');
+        const response = await fetch('https://bursa-transport-server.onrender.com/feedbacks');
         const data = await response.json();
 
         const testimonialsContainer = document.getElementById('testimonials-container');
@@ -239,7 +239,7 @@ function showNextTestimonials() {
 
 async function getTestimonials(startIndex = 0) {
     try {
-        const response = await fetch('http://13.49.74.56:8090/feedbacks');
+        const response = await fetch('https://bursa-transport-server.onrender.com/feedbacks');
         const data = await response.json();
 
         const testimonialsContainer = document.getElementById('testimonials-container');
