@@ -217,6 +217,11 @@ function searchByNameRating() {
                 row.insertCell(1).textContent = emailRequest.rating;
                 row.insertCell(2).textContent = emailRequest.mesajFeedback;
                 row.insertCell(3).textContent = emailRequest.data;
+
+                row.cells[0].classList.add("left-align");
+                row.cells[1].classList.add("left-align");
+                row.cells[2].classList.add("left-align");
+                row.cells[3].classList.add("left-align");
             });
         })
         .catch(error => {
@@ -243,6 +248,11 @@ function allDataFeedback() {
                 row.insertCell(1).textContent = emailRequest.rating;
                 row.insertCell(2).textContent = emailRequest.mesajFeedback;
                 row.insertCell(3).textContent = emailRequest.data;
+
+                row.cells[0].classList.add("left-align");
+                row.cells[1].classList.add("left-align");
+                row.cells[2].classList.add("left-align");
+                row.cells[3].classList.add("left-align");
             });
         })
         .catch(error => {
