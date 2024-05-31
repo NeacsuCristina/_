@@ -15,7 +15,7 @@ form.addEventListener('submit', async (event) => {
     };
     console.log(formData);
     try {
-        const response = await fetch('http://localhost:8090/send-email', {
+        const response = await fetch('https://bursa-transport-server.onrender.com/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
